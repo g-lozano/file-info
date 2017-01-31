@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>File Analyzer</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="page-header">
+            <h1>File Analyzer</h1>
+        </div>
+
+        <div class="panel panel-info">
+
+            <div class="panel-heading">
+                <h3 class="panel-title">Upload a file to analyze:</h3>
+            </div>
+
+            <div class="panel-body">
+                <form action="/readfile" method="post" enctype="multipart/form-data">
+                    <input type="file">
+                </form>
+            </div>
+            <br>
+                <p>Disclaimer: Files are not stored.</p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
