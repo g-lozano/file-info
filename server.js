@@ -1,11 +1,8 @@
 var express = require('express')
-var bodyParser = require('body-parser')
 var multer = require('multer')
 var fs = require('fs')
 var upload = multer({ dest: 'uploads/' })
 var app = express()
-
-app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html')
